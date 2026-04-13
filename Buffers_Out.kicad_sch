@@ -3306,7 +3306,7 @@
 			)
 		)
 	)
-	(global_label "VBIAS_OUT"
+	(global_label "+VBIAS_OUT"
 		(shape input)
 		(at 90.17 151.13 0)
 		(fields_autoplaced yes)
@@ -3318,7 +3318,7 @@
 		)
 		(uuid "d80d5388-46ae-480b-aca0-284412f95fdd")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.0129 151.13 0)
+			(at 104.5853 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3350,7 +3350,7 @@
 			)
 		)
 	)
-	(global_label "VBIAS_OUT"
+	(global_label "+VBIAS_OUT"
 		(shape input)
 		(at 90.17 81.28 0)
 		(fields_autoplaced yes)
@@ -3362,7 +3362,7 @@
 		)
 		(uuid "f17b42b8-3723-408c-86a7-301d622cd3c8")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 103.0129 81.28 0)
+			(at 104.5853 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
