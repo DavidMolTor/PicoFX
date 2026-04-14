@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 1.02,
-          "width": 1.78
+          "drill": 1.152,
+          "height": 1.152,
+          "width": 1.152
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -260,12 +260,16 @@
   "erc": {
     "erc_exclusions": [
       [
-        "multiple_net_names|2057400|800100|f93ddbe4-88a9-4947-a32a-26e5dab9d69f|43e484e8-22b9-4561-9598-b9714b83811d|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a",
+        "multiple_net_names|1625600|1371600|d9203454-05a2-4d4e-8302-6deeec24ad80|d4e3dd88-51a7-4871-9ac4-e21606d2ed24|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a",
         ""
       ],
       [
-        "pin_to_pin|1854200|342900|1984df50-159d-42e1-87e8-c92dc2a24007|c43de5d2-afd7-4dd8-ab42-663dbbc6f08c|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/266eebaa-f067-4f1b-a54e-f61e0e7aca58",
-        ""
+        "pin_to_pin|1803400|1054100|ba135703-37b6-4983-b291-36f59add4983|0494e65f-65ee-47a7-9db1-97ece572dd52|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a",
+        "Only one single GND plane acoording to everyone if there is no true isolation between them."
+      ],
+      [
+        "pin_to_pin|1854200|317500|1984df50-159d-42e1-87e8-c92dc2a24007|c43de5d2-afd7-4dd8-ab42-663dbbc6f08c|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a|/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/266eebaa-f067-4f1b-a54e-f61e0e7aca58",
+        "Disabled PICO 3V3 regulator. Supplied via the 3V3 pin from digital supply LDO."
       ]
     ],
     "meta": {
@@ -632,7 +636,7 @@
       },
       {
         "netclass": "PWRA",
-        "pattern": "/Power/+VBIAS*"
+        "pattern": "VCOM"
       },
       {
         "netclass": "PWRA",
@@ -640,7 +644,7 @@
       },
       {
         "netclass": "PWRA",
-        "pattern": "/Codec/V*"
+        "pattern": "/Codec/FILT+"
       },
       {
         "netclass": "PWRGND",

@@ -3673,7 +3673,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "33b05cf5-2362-4449-8c5f-0bba44194be0")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR07"
 			(at 205.74 101.6 0)
 			(effects
 				(font
@@ -3723,7 +3723,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR072")
+					(reference "#PWR07")
 					(unit 1)
 				)
 			)
@@ -4057,7 +4057,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75cd5334-4f09-454b-bf11-1b1f1d5e593a")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR08"
 			(at 205.74 118.11 0)
 			(effects
 				(font
@@ -4107,7 +4107,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR07")
+					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -4123,7 +4123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84082781-acdb-4b5d-8e7f-37394f9d710c")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR02"
 			(at 160.02 148.59 0)
 			(effects
 				(font
@@ -4173,7 +4173,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR071")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -4254,7 +4254,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "92e6f0ba-8dba-40d4-bf6c-8fb6305c2863")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR06"
 			(at 203.2 151.13 0)
 			(effects
 				(font
@@ -4304,7 +4304,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR05")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
@@ -4320,7 +4320,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "99f686e1-a32b-45a6-ae51-58416bb98a40")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR09"
 			(at 220.98 88.9 0)
 			(effects
 				(font
@@ -4370,7 +4370,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR06")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -4497,7 +4497,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa0d16f6-d607-47bd-915a-df991efd85ec")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR05"
 			(at 185.42 33.02 0)
 			(effects
 				(font
@@ -4547,7 +4547,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR04")
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -4564,7 +4564,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adb1c4c3-92f9-485f-b970-af6b8d365155")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR03"
 			(at 162.56 138.43 0)
 			(effects
 				(font
@@ -4614,7 +4614,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR02")
+					(reference "#PWR03")
 					(unit 1)
 				)
 			)
@@ -4711,7 +4711,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ecb439db-2657-4823-9ccb-65e904032ce1")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR04"
 			(at 180.34 114.3 0)
 			(effects
 				(font
@@ -4761,7 +4761,7 @@
 		(instances
 			(project "SimpleCodec"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
-					(reference "#PWR03")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
