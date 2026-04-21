@@ -514,7 +514,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "SimpleCodec.kicad_pro",
+    "filename": "PicoFX.kicad_pro",
     "version": 3
   },
   "net_settings": {
@@ -886,18 +886,18 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "SimpleCodec.kicad_sch",
-        "name": "SimpleCodec",
+        "filename": "PicoFX.kicad_sch",
+        "name": "PicoFX",
         "uuid": "4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
       }
     ],
-    "used_designators": "H4-10,D7-8,#PWR65-68,C43-44,FB4",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
     [
       "4cbf131b-42e8-4a05-beea-68c6d66cdb1a",
-      "SimpleCodec"
+      "PicoFX"
     ],
     [
       "266eebaa-f067-4f1b-a54e-f61e0e7aca58",

@@ -5,7 +5,7 @@
 	(uuid "bea7326d-69c5-48e0-83c1-a4667ffe0226")
 	(paper "A4")
 	(title_block
-		(title "SIMPLE CODEC")
+		(title "PICO FX")
 		(date "2026-04-08")
 		(rev "1.0")
 		(company "DavidMolTor")
@@ -2695,7 +2695,7 @@
 			(uuid "9341ac38-072c-4d2c-ba78-2b86d96db3b7")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR050")
 					(unit 1)
@@ -2777,7 +2777,7 @@
 			(uuid "28f22157-cdf4-4017-a5a5-31e7cbebcc2f")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C33")
 					(unit 1)
@@ -2855,7 +2855,7 @@
 			(uuid "9cf03227-6af5-479d-96e6-fbe944f81775")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR052")
 					(unit 1)
@@ -3015,7 +3015,7 @@
 			(uuid "c862f14c-31eb-47a2-83bc-be1f65ee80cb")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "U5")
 					(unit 1)
@@ -3093,7 +3093,7 @@
 			(uuid "6c010dc2-c848-4f2c-b946-d407f7ef2e57")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR060")
 					(unit 1)
@@ -3174,7 +3174,7 @@
 			(uuid "30577969-bcd7-4e99-b181-1a774d40f174")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C34")
 					(unit 1)
@@ -3255,7 +3255,7 @@
 			(uuid "9b41d93e-437a-4b32-b485-dfcbf1f38e45")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C28")
 					(unit 1)
@@ -3333,7 +3333,7 @@
 			(uuid "202f7c6d-045f-4460-8e33-b2d45e84111a")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR051")
 					(unit 1)
@@ -3412,7 +3412,7 @@
 			(uuid "00a28e51-bd45-43f4-a0df-36578871371c")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR048")
 					(unit 1)
@@ -3493,7 +3493,7 @@
 			(uuid "8bc6f437-abec-48fd-ab72-a0df38e91251")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C27")
 					(unit 1)
@@ -3571,7 +3571,7 @@
 			(uuid "7a11d064-7713-4def-9deb-3a767dfa977e")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR061")
 					(unit 1)
@@ -3649,7 +3649,7 @@
 			(uuid "d23606b9-d61f-4966-b232-6008d0a4ddde")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR056")
 					(unit 1)
@@ -3727,7 +3727,7 @@
 			(uuid "ec2d8ec8-7f18-4ffd-8728-0b4f81557dea")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR055")
 					(unit 1)
@@ -3808,7 +3808,7 @@
 			(uuid "0d63de53-433d-4293-8fcf-f043ba38c1da")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C29")
 					(unit 1)
@@ -3886,7 +3886,7 @@
 			(uuid "4fe3b64c-f6fc-4661-8dd9-5dfb87d5fbab")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR057")
 					(unit 1)
@@ -3964,7 +3964,7 @@
 			(uuid "0edf8e61-dee7-4c8e-9e92-d243a535be44")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR054")
 					(unit 1)
@@ -4042,7 +4042,7 @@
 			(uuid "8c107722-1d86-49ad-a654-630645da21fd")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR058")
 					(unit 1)
@@ -4120,7 +4120,7 @@
 			(uuid "862ea852-2822-45a5-8ff8-4e537b5e0133")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR053")
 					(unit 1)
@@ -4202,7 +4202,7 @@
 			(uuid "86fc0a7a-9593-4f74-a0b1-5f3a24f7aeb1")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "R29")
 					(unit 1)
@@ -4280,7 +4280,7 @@
 			(uuid "da290a66-51c3-4fa4-97aa-d3abef9fe08a")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR059")
 					(unit 1)
@@ -4362,7 +4362,7 @@
 			(uuid "f38e1a52-10a0-490b-b1ef-8d4f5d3424d7")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C32")
 					(unit 1)
@@ -4444,7 +4444,7 @@
 			(uuid "8e7eadb9-43da-4d5c-81ff-93ace20c7ca3")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "R28")
 					(unit 1)
@@ -4526,7 +4526,7 @@
 			(uuid "3932a0b8-1d1f-4152-a12e-5d75576e36b8")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "R30")
 					(unit 1)
@@ -4605,7 +4605,7 @@
 			(uuid "bf4c84fa-6d13-42b1-a131-0137d248224a")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR047")
 					(unit 1)
@@ -4686,7 +4686,7 @@
 			(uuid "b7138b13-951f-4b18-aa15-7a30970a6e94")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C30")
 					(unit 1)
@@ -4768,7 +4768,7 @@
 			(uuid "2d5ea5c5-1a05-4160-ba53-ae800327d686")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "R27")
 					(unit 1)
@@ -4850,7 +4850,7 @@
 			(uuid "a605b95a-b406-4d68-a32a-dbbd46cbd0b8")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C35")
 					(unit 1)
@@ -4931,7 +4931,7 @@
 			(uuid "f6a5fc1f-0462-4215-8081-7980eb4b523b")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C38")
 					(unit 1)
@@ -5009,7 +5009,7 @@
 			(uuid "62406431-5b47-49c8-a009-f60cd6321b8a")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "#PWR049")
 					(unit 1)
@@ -5091,7 +5091,7 @@
 			(uuid "e7bb6b4a-c86e-4315-818a-886016e03bd6")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C36")
 					(unit 1)
@@ -5173,7 +5173,7 @@
 			(uuid "8bf0f01b-ba12-42fe-88f3-a6642e12368c")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C31")
 					(unit 1)
@@ -5255,7 +5255,7 @@
 			(uuid "5d6dac78-06bb-4f50-8bed-986928f00c92")
 		)
 		(instances
-			(project "SimpleCodec"
+			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "C37")
 					(unit 1)

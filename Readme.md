@@ -1,6 +1,6 @@
-# SIMPLE CODEC
+# PICO FX
 
-A simple stereo codec for guitar using an RP Pico 2 development board.
+A simple stereo guitar effects platform using an RP Pico 2 development board.
 
 ## Introduction
 
@@ -12,7 +12,7 @@ All the power regulation is done through LDO regulators that prioritize low ripp
 
 It is designed to work with 9V intput voltage. It also has a set of headers for it to be able to interface with a control board in the future.
 
-<p align="center"><img src="/Build/SimpleCodec.png" alt="SIMPLE CODEC"></p>
+<p align="center"><img src="/Build/PicoFX.png" alt="PICO FX"></p>
 
 ## Features
 
