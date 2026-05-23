@@ -3473,6 +3473,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 135.89 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 135.89 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "6ce32283-5b7b-45f2-8d68-1021603ce2a3")
 		)
@@ -3622,6 +3644,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 223.52 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C15850"
+			(at 223.52 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
 			(at 223.52 127 0)
 			(hide yes)
 			(show_name no)
@@ -3792,6 +3836,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 160.02 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 160.02 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "5910e7c4-cd23-46b6-a67d-c649c0594467")
 		)
@@ -3952,6 +4018,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 208.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 208.28 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "44dd39ea-ec31-43bb-9a45-bdec66f9f38b")
 		)
@@ -3969,7 +4057,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 185.42 130.81 0)
+		(at 185.42 123.19 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3980,7 +4068,7 @@
 		(dnp no)
 		(uuid "3be9a675-c82e-41f6-a3f8-3da999aca392")
 		(property "Reference" "C7"
-			(at 181.61 129.5399 0)
+			(at 181.61 121.9199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3991,7 +4079,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 181.61 132.0799 0)
+			(at 181.61 124.4599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4002,7 +4090,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 184.4548 134.62 0)
+			(at 184.4548 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4013,7 +4101,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 130.81 0)
+			(at 185.42 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4024,7 +4112,29 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 185.42 130.81 0)
+			(at 185.42 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C15850"
+			(at 185.42 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 185.42 123.19 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4348,6 +4458,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 210.82 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 210.82 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "b6f2f052-0978-43c7-bfd0-cb7d3573ddda")
 		)
@@ -4442,8 +4574,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 233.68 67.31 0)
-		(mirror y)
+		(at 233.68 59.69 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4453,7 +4584,7 @@
 		(dnp no)
 		(uuid "574cde2b-bbce-4ebd-b601-a6e8e7b54efc")
 		(property "Reference" "C13"
-			(at 229.87 66.0399 0)
+			(at 237.49 58.4199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4464,7 +4595,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 229.87 68.5799 0)
+			(at 237.49 60.9599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4475,7 +4606,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-			(at 232.7148 71.12 0)
+			(at 234.6452 63.5 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4486,7 +4617,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 67.31 0)
+			(at 233.68 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4497,7 +4628,29 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 233.68 67.31 0)
+			(at 233.68 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C15850"
+			(at 233.68 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 233.68 59.69 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4524,7 +4677,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 185.42 123.19 0)
+		(at 185.42 130.81 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -4535,7 +4688,7 @@
 		(dnp no)
 		(uuid "58d24f16-df82-43be-82ee-d3455ef2f422")
 		(property "Reference" "R3"
-			(at 182.88 121.9199 0)
+			(at 182.88 129.5399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4546,7 +4699,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 182.88 124.4599 0)
+			(at 182.88 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4557,7 +4710,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 187.198 123.19 90)
+			(at 187.198 130.81 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4568,7 +4721,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 185.42 123.19 0)
+			(at 185.42 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4579,7 +4732,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 185.42 123.19 0)
+			(at 185.42 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C22936"
+			(at 185.42 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF100KT5E"
+			(at 185.42 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4826,6 +5001,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 182.88 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 182.88 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d8525a78-0a28-49d3-ad6a-a45aa0627134")
 		)
@@ -4864,7 +5061,7 @@
 			)
 		)
 		(property "Value" "+VCC_FILTA"
-			(at 85.09 109.982 90)
+			(at 85.09 109.474 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4985,6 +5182,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C22775"
+			(at 134.62 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF1000T5E"
+			(at 134.62 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a77d7406-afa9-4a53-b2cb-a2707481f3a0")
 		)
@@ -5055,6 +5274,28 @@
 		)
 		(property "Description" "Ferrite bead"
 			(at 189.23 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C13415"
+			(at 189.23 54.61 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SDCL1608C68NJTDF"
+			(at 189.23 54.61 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,6 +5539,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C22466352"
+			(at 109.22 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "DSK24"
+			(at 109.22 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f9fac1db-f1d7-4a6c-b82f-476499f7bc5a")
 		)
@@ -5454,6 +5717,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C13415"
+			(at 204.47 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SDCL1608C68NJTDF"
+			(at 204.47 118.11 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fbd2d089-77e1-458c-979c-673c24a481ae")
 		)
@@ -5536,6 +5821,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 147.32 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 147.32 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8bdd6e2c-cd70-44c1-b1d3-8c6f2a782360")
 		)
@@ -5608,6 +5915,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 195.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C15850"
+			(at 195.58 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
 			(at 195.58 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -5932,6 +6261,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C19077505"
+			(at 100.33 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SMF10CA"
+			(at 100.33 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "98ee6bdd-6886-4906-945e-4d82e6d4f4a4")
 		)
@@ -6165,6 +6516,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C13415"
+			(at 129.54 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "SDCL1608C68NJTDF"
+			(at 129.54 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "fec73631-8333-42ff-ab0d-acd43d3d0fea")
 		)
@@ -6324,6 +6697,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 198.12 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 198.12 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "906c5d61-ba93-4298-90e6-2201b7e76dd5")
 		)
@@ -6394,6 +6789,28 @@
 			)
 		)
 		(property "Description" "1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"
+			(at 220.98 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C6186"
+			(at 220.98 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "AMS1117-3.3"
 			(at 220.98 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6660,9 +7077,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ef1e860e-2ac6-4a84-b661-d1b99a5694fb")
@@ -6912,6 +7329,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C6187"
+			(at 172.72 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "AMS1117-5.0"
+			(at 172.72 118.11 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "c13b05aa-3b2b-4a6b-b4cb-320f1498ca64")
 		)
@@ -6996,6 +7435,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 123.19 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 123.19 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "abf53c44-3d6d-4e43-b925-168a79558d6a")
 		)
@@ -7034,7 +7495,7 @@
 			)
 		)
 		(property "Value" "+VCC_FILTD"
-			(at 90.17 112.268 90)
+			(at 90.17 109.474 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7090,8 +7551,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 233.68 59.69 0)
-		(mirror y)
+		(at 233.68 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7101,7 +7561,7 @@
 		(dnp no)
 		(uuid "fd35e31b-9c44-443c-803c-b3212ac412b7")
 		(property "Reference" "R4"
-			(at 231.14 58.4199 0)
+			(at 236.22 66.0399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7112,7 +7572,7 @@
 			)
 		)
 		(property "Value" "1"
-			(at 231.14 60.9599 0)
+			(at 236.22 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7123,7 +7583,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 235.458 59.69 90)
+			(at 231.902 67.31 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7134,7 +7594,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 233.68 59.69 0)
+			(at 233.68 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7145,7 +7605,29 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 233.68 59.69 0)
+			(at 233.68 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C22936"
+			(at 233.68 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "0603WAF100KT5E"
+			(at 233.68 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7237,6 +7719,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "C15850"
+			(at 236.22 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
+			(at 236.22 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "c0645789-17aa-4bb8-8099-f5818babd4bb")
 		)
@@ -7309,6 +7813,28 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
+			(at 134.62 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "C15850"
+			(at 134.62 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL21A106KAYNNNE"
 			(at 134.62 127 0)
 			(hide yes)
 			(show_name no)
