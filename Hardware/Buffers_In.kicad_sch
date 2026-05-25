@@ -4157,6 +4157,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 50.8 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 50.8 88.9 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "SI"
 			(uuid "65bf16ae-599a-4536-8059-5378651a3c12")
 		)

@@ -3870,6 +3870,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 86.36 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 86.36 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
@@ -3965,7 +3987,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2c096f45-c730-4547-b736-4c11e5b0277f")
@@ -4014,6 +4036,28 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 143.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 143.51 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 143.51 130.81 0)
 			(hide yes)
 			(show_name no)
@@ -4119,7 +4163,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "547814ae-7f06-4cf7-a352-d55e708a4078")
@@ -4168,6 +4212,28 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 143.51 123.19 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 143.51 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4296,9 +4362,9 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "58f75ed6-ae6e-41de-8a53-a0210aa1f8b8")
@@ -4516,7 +4582,7 @@
 		(exclude_from_sim no)
 		(in_bom no)
 		(on_board yes)
-		(in_pos_files yes)
+		(in_pos_files no)
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6338f5e5-ad16-4ed7-9155-180a34ef2b62")
@@ -4565,6 +4631,28 @@
 			)
 		)
 		(property "Description" "Fiducial Marker"
+			(at 143.51 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 143.51 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 143.51 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -4651,6 +4739,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 99.06 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 99.06 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
@@ -4727,6 +4837,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 158.75 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 158.75 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
@@ -4793,6 +4925,28 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 72.39 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 72.39 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 72.39 179.07 0)
 			(hide yes)
 			(show_name no)
@@ -5372,6 +5526,28 @@
 				)
 			)
 		)
+		(property "JLCPCB Part" "-"
+			(at 158.75 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
+			(at 158.75 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(instances
 			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a"
@@ -5438,6 +5614,28 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 144.78 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 144.78 182.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 144.78 182.88 0)
 			(hide yes)
 			(show_name no)
@@ -5672,6 +5870,28 @@
 			)
 		)
 		(property "Description" "Mounting Hole without connection"
+			(at 144.78 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB Part" "-"
+			(at 144.78 176.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "-"
 			(at 144.78 176.53 0)
 			(hide yes)
 			(show_name no)

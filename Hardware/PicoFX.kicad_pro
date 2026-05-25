@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 1.0,
-          "height": 1.6,
-          "width": 1.6
+          "drill": 0.0,
+          "height": 1.02,
+          "width": 1.78
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -775,7 +775,7 @@
       "method": 0,
       "sort_order": 0
     },
-    "bom_export_filename": "Build\\BOM.csv",
+    "bom_export_filename": "..\\Build\\PicoFX.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ";",
