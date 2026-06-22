@@ -1301,10 +1301,6 @@
 		(at 119.38 92.71)
 		(uuid "137b8681-8b06-4de0-a9b1-fb2bb4f975a4")
 	)
-	(no_connect
-		(at 119.38 95.25)
-		(uuid "8b93df01-a7fb-415a-b7f1-95128fdea3a6")
-	)
 	(wire
 		(pts
 			(xy 102.87 80.01) (xy 102.87 78.74)
@@ -1437,16 +1433,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 95.25) (xy 121.92 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "14a84a81-9557-45b8-816b-b50f4a4e5405")
-	)
-	(wire
-		(pts
 			(xy 119.38 92.71) (xy 121.92 92.71)
 		)
 		(stroke
@@ -1514,6 +1500,16 @@
 			(type default)
 		)
 		(uuid "2aa16ecc-b570-4dd9-9d0c-e495bd1801b9")
+	)
+	(wire
+		(pts
+			(xy 116.84 90.17) (xy 114.3 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e37645a-f0cb-49a2-9f5b-ffca8b0e2e0a")
 	)
 	(wire
 		(pts
@@ -1664,6 +1660,16 @@
 			(type default)
 		)
 		(uuid "5eef5e1c-c508-41a9-acdd-00722b904c25")
+	)
+	(wire
+		(pts
+			(xy 114.3 90.17) (xy 114.3 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f1663bf-16d4-4487-a89a-03d687af40ee")
 	)
 	(wire
 		(pts
@@ -1997,6 +2003,16 @@
 	)
 	(wire
 		(pts
+			(xy 116.84 95.25) (xy 116.84 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cda01339-ceee-4859-b978-db7ab083fa21")
+	)
+	(wire
+		(pts
 			(xy 187.96 107.95) (xy 187.96 110.49)
 		)
 		(stroke
@@ -2004,6 +2020,16 @@
 			(type default)
 		)
 		(uuid "d0a7610a-5831-44d8-b8b9-b421ed56e1a5")
+	)
+	(wire
+		(pts
+			(xy 116.84 95.25) (xy 121.92 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d0b3b25e-57d5-4a8d-9f9b-0ec3249571fe")
 	)
 	(wire
 		(pts
@@ -4749,6 +4775,85 @@
 			(project "PicoFX"
 				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
 					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 114.3 92.71 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a9f10746-9518-49d0-a7e8-5449768c9a38")
+		(property "Reference" "#PWR065"
+			(at 114.3 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 114.3 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 114.3 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 114.3 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "87ad83c4-60de-4d10-9f85-694d8221180f")
+		)
+		(instances
+			(project "PicoFX"
+				(path "/4cbf131b-42e8-4a05-beea-68c6d66cdb1a/f7920eb9-f1f4-4882-8d74-32484732cce5"
+					(reference "#PWR065")
 					(unit 1)
 				)
 			)

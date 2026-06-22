@@ -5138,7 +5138,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100"
+		(property "Value" "10"
 			(at 132.08 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5182,7 +5182,7 @@
 				)
 			)
 		)
-		(property "JLCPCB Part" "C22775"
+		(property "JLCPCB Part" "C22859"
 			(at 134.62 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5193,7 +5193,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "0603WAF1000T5E"
+		(property "Manufacturer Part" "0603WAF100JT5E"
 			(at 134.62 111.76 0)
 			(hide yes)
 			(show_name no)
