@@ -12,40 +12,51 @@
 .program i2s_tx
 .side_set 2
 
-; Sideset bits: 0 = LRCK, 1 = SCLK
-; I2S standard: LRCK=0 -> left, LRCK=1 -> right
-
-;public entry_point:
-;    set x, 30            side 0b00   ; LRCK=0, SCLK=0
-;    nop                  side 0b10   ; Previous SCLK pulse to MSB
-
-;left_loop:
-;    out pins, 1          side 0b00   ; SCLK low, show next bit
-;    jmp x-- left_loop    side 0b10   ; SCLK high, receiver samples
-;    out pins, 1          side 0b01   ; Last bit, LRCK -> 1, SCLK = 0
-;    set x, 30            side 0b11   ; SCLK high, bit-delay
-
-;right_loop:
-;    out pins, 1          side 0b01   ; SCLK low, show next bit
-;    jmp x-- right_loop   side 0b11   ; SCLK high, receiver samples
-;    out pins, 1          side 0b00   ; Last bit, LRCK -> 0, SCLK = 0
-;    set x, 30            side 0b10   ; SCLK high, bit-delay
+; Sideset bits: LRCK = 0, SCLK = 1
+; I2S standard: LRCK = 0 -> LEFT, LRCK = 1 -> RIGHT
 
 public entry_point:
-    pull noblock            side 0b00
-    set x, 30               side 0b10
+    pull noblock            side 0b00   ; Get a word from the queue, LRCK = LOW, SCKL = LOW
+    set x, 30               side 0b10   ; Load the register counter, LRCK = LOW, SCKL = HIGH
 
 left_loop:
-    out pins, 1             side 0b00
-    jmp x-- left_loop       side 0b10
+    out pins, 1             side 0b00   ; Start sending data, LRCK = LOW, SCKL = LOW
+    jmp x-- left_loop       side 0b10   ; Decrease the count, LRCK = LOW, SCKL = HIGH
 
-    pull noblock            side 0b01
-    set x, 30               side 0b11
+    pull noblock            side 0b01   ; Get a word from the queue, LRCK = HIGH, SCKL = LOW
+    set x, 30               side 0b11   ; Load the register counter, LRCK = HIGH, SCKL = HIGH
 
 right_loop:
-    out pins, 1             side 0b01
-    jmp x-- right_loop      side 0b11
-    
+    out pins, 1             side 0b01   ; Start sending data, LRCK = HIGH, SCKL = LOW
+    jmp x-- right_loop      side 0b11   ; Decrease the count, LRCK = HIGH, SCKL = HIGH
+
+
+.program i2s_rx
+
+; Sideset bits: LRCK = 0, SCLK = 1
+; I2S standard: LRCK = 0 -> LEFT, LRCK = 1 -> RIGHT
+
+public entry_point:
+    set x, 23               ; Set the 24-bit word length counter
+    wait 0 jmppin [1]       ; LRCK falling edge for left channel
+
+left_loop:
+    in pins, 1              ; Sample DIN at half window
+    jmp x-- left_loop       ; Decrease the counter and iterate
+
+    in null, 8              ; Set the padding for the word
+    push noblock            ; Push the sample to the RX queue
+
+    set x, 23               ; Set the 24-bit word length counter
+    wait 1 jmppin [1]       ; LRCK rising edge for right channel
+
+right_loop:
+    in pins, 1              ; Sample DIN at half window
+    jmp x-- right_loop      ; Decrease the counter and iterate
+
+    in null, 8              ; Set the padding for the word
+    push noblock            ; Push the sample to the RX queue
+
 
 % c-sdk {
 
@@ -76,11 +87,28 @@ static inline void i2s_tx_program_init(PIO pio, uint sm, uint offset,
     sm_config_set_out_pins(&sm_config, pin_sdout, 1);
     sm_config_set_sideset_pins(&sm_config, pin_lrck_base);
 
-    sm_config_set_out_shift(&sm_config, false, true, 32);
+    sm_config_set_out_shift(&sm_config, false, false, 32);
     sm_config_set_fifo_join(&sm_config, PIO_FIFO_JOIN_TX);
     sm_config_set_clkdiv(&sm_config, div);
 
-    pio_sm_init(pio, sm, offset + i2s_tx_offset_entry_point, &sm_config);
+    pio_sm_init(pio, sm, offset, &sm_config);
+}
+
+static inline void i2s_rx_program_init(PIO pio, uint sm, uint offset,
+                                       uint pin_sdin, uint pin_lrck_base, float div)
+{
+    pio_gpio_init(pio, pin_sdin);
+
+    pio_sm_config sm_config = i2s_rx_program_get_default_config(offset);
+
+    sm_config_set_jmp_pin(&sm_config, pin_lrck_base);
+    sm_config_set_in_pins(&sm_config, pin_sdin);
+
+    sm_config_set_in_shift(&sm_config, true, true, 32);
+    sm_config_set_fifo_join(&sm_config, PIO_FIFO_JOIN_RX);
+    sm_config_set_clkdiv(&sm_config, div);
+
+    pio_sm_init(pio, sm, offset, &sm_config);
 }
 
 %}

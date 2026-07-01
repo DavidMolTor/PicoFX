@@ -15,12 +15,12 @@ void CS4272::init()
     // Set the state machine numbers
     sm_mclk = 0;
     sm_tx   = 1;
-    //sm_rx   = 2;
+    sm_rx   = 2;
 
     // Add the PIO programs
     uint off_mclk = pio_add_program(pio_port, &mclk_program);
     uint off_tx   = pio_add_program(pio_port, &i2s_tx_program);
-    //uint off_rx   = pio_add_program(pio_port, &i2s_rx_program);
+    uint off_rx   = pio_add_program(pio_port, &i2s_rx_program);
 
     // Calculate the PIO clocks
     float div_mclk = sys_clk / (2 * SAMPLES_PER_SEC * CS4272_MCLK_RATIO);
@@ -29,10 +29,9 @@ void CS4272::init()
     // Initialize the PIO programs
     mclk_program_init(pio_port, sm_mclk, off_mclk, PIN_MCLK, div_mclk);
     i2s_tx_program_init(pio_port, sm_tx, off_tx, PIN_SDOUT, PIN_LRCK, div_sclk);
-    //i2s_rx_program_init(pio_port, sm_rx, off_rx, PIN_SDIN, PIN_LRCK, div_sclk);
-    
-    pio_sm_set_enabled(pio_port, sm_mclk, true);
-    pio_sm_set_enabled(pio_port, sm_tx, true);
+    i2s_rx_program_init(pio_port, sm_rx, off_rx, PIN_SDIN, PIN_LRCK, div_sclk);
+
+    pio_enable_sm_mask_in_sync(pio_port, (1u << sm_mclk) | (1u << sm_tx) | (1u << sm_rx));
 }
 
 bool CS4272::setup()
@@ -48,13 +47,16 @@ bool CS4272::setup()
     gpio_put(CS4272_RESET_PIN, 1);
 
     // Set power down mode and then control port as enabled
-    result &= write_reg(CS4272_MODE_CTRL2, CS4272_MODE_CTRL2_POWER_DOWN | CS4272_MODE_CTRL2_CTRL_PORT_EN);
+    result &= writeReg(CS4272_MODE_CTRL2, CS4272_MODE_CTRL2_POWER_DOWN | CS4272_MODE_CTRL2_CTRL_PORT_EN);
 
-    // Set single speed clock ratio and slave mode
-    result &= write_reg(CS4272_MODE_CONTROL, CS4272_MC_RATIO_SEL(0) | CS4272_MC_SERIAL_FORMAT(1));
+    // Set single speed clock ratio and I2S format
+    result &= writeReg(CS4272_MODE_CONTROL, CS4272_MC_RATIO_SEL(0) | CS4272_MC_SERIAL_FORMAT(1));
+
+    // Set the ADC for I2S format
+    result &= writeReg(CS4272_ADC_CTRL, CS4272_ADC_CTRL_SER_FORMAT);
 
     // Release the power down mode
-    result &= write_reg(CS4272_MODE_CTRL2, CS4272_MODE_CTRL2_CTRL_PORT_EN);
+    result &= writeReg(CS4272_MODE_CTRL2, CS4272_MODE_CTRL2_CTRL_PORT_EN);
 
     return result;
 }
@@ -64,10 +66,10 @@ bool CS4272::volume(uint8_t vol_left, uint8_t vol_right)
     bool result = true;
 
 	reg_local[CS4272_DAC_CHA_VOL] = CS4272_DAC_CHA_VOL_VOLUME(0x7F - (vol_left & 0x7F));
-	result &= write_reg(CS4272_DAC_CHA_VOL, reg_local[CS4272_DAC_CHA_VOL]);
+	result &= writeReg(CS4272_DAC_CHA_VOL, reg_local[CS4272_DAC_CHA_VOL]);
 	
 	reg_local[CS4272_DAC_CHB_VOL] = CS4272_DAC_CHB_VOL_VOLUME(0x7F - (vol_right & 0x7F));
-	result &= write_reg(CS4272_DAC_CHB_VOL, reg_local[CS4272_DAC_CHB_VOL]);
+	result &= writeReg(CS4272_DAC_CHB_VOL, reg_local[CS4272_DAC_CHB_VOL]);
 
 	return result;
 }
@@ -85,8 +87,8 @@ bool CS4272::muteOutput(bool mute)
 
     bool result = true;
 
-    result &= write_reg(CS4272_DAC_CHA_VOL, reg_local[CS4272_DAC_CHA_VOL]);
-    result &= write_reg(CS4272_DAC_CHB_VOL, reg_local[CS4272_DAC_CHB_VOL]);
+    result &= writeReg(CS4272_DAC_CHA_VOL, reg_local[CS4272_DAC_CHA_VOL]);
+    result &= writeReg(CS4272_DAC_CHB_VOL, reg_local[CS4272_DAC_CHB_VOL]);
 
 	return result;
 }
@@ -98,7 +100,7 @@ bool CS4272::muteInput(bool mute)
     else
         reg_local[CS4272_ADC_CTRL] &= ~CS4272_ADC_CTRL_MUTE(3);
 
-	return write_reg(CS4272_ADC_CTRL, reg_local[CS4272_ADC_CTRL]);
+	return writeReg(CS4272_ADC_CTRL, reg_local[CS4272_ADC_CTRL]);
 }
 
 bool CS4272::loopMode(bool loop)
@@ -108,7 +110,7 @@ bool CS4272::loopMode(bool loop)
     else
         reg_local[CS4272_MODE_CTRL2] &= ~CS4272_MODE_CTRL2_LOOP;
 
-	return write_reg(CS4272_MODE_CTRL2, reg_local[CS4272_MODE_CTRL2]);
+	return writeReg(CS4272_MODE_CTRL2, reg_local[CS4272_MODE_CTRL2]);
 }
 
 bool CS4272::setDither(bool dither)
@@ -118,7 +120,7 @@ bool CS4272::setDither(bool dither)
     else
         reg_local[CS4272_ADC_CTRL] &= ~CS4272_ADC_CTRL_DITHER;
 
-	return write_reg(CS4272_ADC_CTRL, reg_local[CS4272_ADC_CTRL]);
+	return writeReg(CS4272_ADC_CTRL, reg_local[CS4272_ADC_CTRL]);
 }
 
 bool CS4272::readInput(uint32_t &val_left, uint32_t &val_right)
@@ -139,7 +141,7 @@ bool CS4272::writeOutput(uint32_t val_left, uint32_t val_right)
     return true;
 }
 
-bool CS4272::read_reg(uint8_t reg, uint8_t *value)
+bool CS4272::readReg(uint8_t reg, uint8_t *value)
 {
     bool result = true;
 
@@ -152,7 +154,8 @@ bool CS4272::read_reg(uint8_t reg, uint8_t *value)
     return result;
 }
 
-bool CS4272::write_reg(uint8_t addr, uint8_t value) {
+bool CS4272::writeReg(uint8_t addr, uint8_t value)
+{
     uint8_t buff[2] = { addr, value };
 
     bool result = i2c_write_blocking(i2c_port, CS4272_ADDR, buff, 2, false) == 2;

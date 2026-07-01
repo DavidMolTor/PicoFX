@@ -66,15 +66,13 @@ target_link_libraries(BasicCodec
 # Add the standard include files to the build
 target_include_directories(BasicCodec PRIVATE
         ${CMAKE_CURRENT_LIST_DIR}
-        include/
-)
+        include/)
 
 # Add any user requested libraries
 target_link_libraries(BasicCodec 
         hardware_i2c
         hardware_pio
-        hardware_clocks
-        )
+        hardware_clocks)
 
 pico_add_extra_outputs(BasicCodec)
 

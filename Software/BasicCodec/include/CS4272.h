@@ -110,8 +110,8 @@ private:
 
     uint8_t reg_local[CS4272_REG_NUM];
 
-    bool read_reg(uint8_t reg, uint8_t *value);
-    bool write_reg(uint8_t reg, uint8_t value);
+    bool readReg(uint8_t reg, uint8_t *value);
+    bool writeReg(uint8_t reg, uint8_t value);
 };
 
 #endif

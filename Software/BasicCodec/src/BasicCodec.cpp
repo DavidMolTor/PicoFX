@@ -64,7 +64,7 @@ int main()
     int32_t sine_table[size];
 
     for (int i = 0; i < size; ++i) {
-        int32_t sample = (int32_t)(0x600000 * sin(2.0 * M_PI * i / size));
+        int32_t sample = (int32_t)(0x7FFFFF * sin(2.0 * M_PI * i / size));
         sine_table[i] = sample << 8;
     }
 
