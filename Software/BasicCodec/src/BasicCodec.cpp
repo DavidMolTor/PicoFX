@@ -2,6 +2,7 @@
 #include <math.h>
 
 #include "pico/stdlib.h"
+#include "pico/multicore.h"
 #include "hardware/i2c.h"
 
 #include "CS4272.h"
@@ -12,6 +13,20 @@
 #define I2C_SCL     15
 #define I2C_BAUD    100000
 
+
+void printBits(uint32_t value)
+{
+	char str[33];
+	str[32] = 0;
+
+	for (int i = 31; i >= 0; i--)
+	{
+		str[i] = '0' + (value & 1);
+		value >>= 1;
+	}
+
+	printf(str);
+}
 
 void init_i2c()
 {
@@ -53,29 +68,32 @@ int main()
     // Codec configuration
     CS4272 codec(pio0, I2C_PORT);
     codec.init();
-
     if (!codec.setup())
         printf("Codec setup error!\n");
 
     float sys_clk = clock_get_hz(clk_sys) / 1000000.0f;
     printf("Running passthrough at clock: %.2f MHz\n", sys_clk);
 
-    int sample = 0, size = SAMPLES_PER_SEC / 1000;
-    int32_t sine_table[size];
-
-    for (int i = 0; i < size; ++i) {
-        int32_t sample = (int32_t)(0x7FFFFF * sin(2.0 * M_PI * i / size));
-        sine_table[i] = sample << 8;
-    }
+    int sample = 0;
+    uint32_t rx_left, rx_right;
 
     while (true) {
-        uint32_t value = (uint32_t)sine_table[sample];
+        codec.readInput(rx_left, rx_right);
 
-        codec.writeOutput(value, value);
-
-        sample++;
-        if (sample >= size) {
-            sample = 0;
+        if (sample < SAMPLES_PER_SEC)
+        {
+            sample++;
+            continue;
         }
+
+        int32_t value_left  = ((int32_t)(rx_left << 8)) >> 8;
+        int32_t value_right = ((int32_t)(rx_right << 8)) >> 8;
+
+        float mv_left   = (float)value_left * 5000.0f / 8388608.0f;
+        float mv_right  = (float)value_right * 5000.0f / 8388608.0f;
+
+        printf("Values: %.2f, %.2f\n", mv_left, mv_right);
+
+        sample = 0;
     }
 }

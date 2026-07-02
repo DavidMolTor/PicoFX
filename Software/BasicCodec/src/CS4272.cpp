@@ -134,9 +134,9 @@ bool CS4272::readInput(uint32_t &val_left, uint32_t &val_right)
 
 bool CS4272::writeOutput(uint32_t val_left, uint32_t val_right)
 {
-    pio_sm_put_blocking(pio_port, sm_tx, val_left);
+    pio_sm_put_blocking(pio_port, sm_tx, val_left << 8);
 
-    pio_sm_put_blocking(pio_port, sm_tx, val_right);
+    pio_sm_put_blocking(pio_port, sm_tx, val_right << 8);
 
     return true;
 }
